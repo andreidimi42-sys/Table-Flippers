@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loot Goblinz Bingo Board</title>
+    <title>Table Flippers Bingo Board</title>
     <style>
         body {
             font-family: 'RuneScape', Arial, sans-serif;
@@ -138,7 +138,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Loot Goblinz Bingo Board</h1>
+        <h1>Table Flippers Bingo Board</h1>
         <div id="countdown">Loading event timer...</div>
         <div class="status" id="status">Loading...</div>
         <div class="bingo-board" id="bingoBoard"></div>
@@ -180,34 +180,34 @@
         // ===============================
         // Bingo Logic (your original code)
         // ===============================
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyuOE31WcxPiw3NJQqwapKjhfKSeAmocIof7HGUTiIuDiGMrfOhVrhbBLDCy5XdB7C5XA/exec';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxaf4rC7wUZwNy4Yqe8EY6cSVH1trsued_DS2OaXult3IK7On8ae-JbjObjtGYId_w/exec';
         
         const bingoItems = [
-            { text: "Synapse", img: "https://oldschool.runescape.wiki/images/Tormented_synapse_detail.png?27153" },
-            { text: "Tempoross Unique", img: "https://oldschool.runescape.wiki/images/Tome_of_water.png" },
-            { text: "Lord of the Rings", img: "https://oldschool.runescape.wiki/images/Ring_of_suffering.png" },
-            { text: "3 Barrows Unique", img: "https://oldschool.runescape.wiki/images/Dharok%27s_helm.png" },
-            { text: "Any Pet", img: "https://oldschool.runescape.wiki/images/Abyssal_orphan.png" },
-            { text: "Vorkath Unique", img: "https://oldschool.runescape.wiki/images/Skeletal_visage.png" },
-            { text: "Clue 250k+", img: "https://oldschool.runescape.wiki/images/Clue_scroll_%28master%29.png" },
-            { text: "Any Crystal Seed", img: "https://oldschool.runescape.wiki/images/Crystal_armour_seed_detail.png?fa149" },
-            { text: "Moons Unique", img: "https://oldschool.runescape.wiki/images/Dual_macuahuitl_detail.png?be5ad" },
-            { text: "Glacial temotli", img: "https://oldschool.runescape.wiki/images/Glacial_temotli_detail.png?37b7e" },
-            { text: "GOTR Unique", img: "https://oldschool.runescape.wiki/images/Abyssal_lantern_detail.png?eca08" },
-            { text: "Zulrah Unique", img: "https://oldschool.runescape.wiki/images/Toxic_blowpipe.png" },
-            { text: "Free" },
-            { text: "Mimic", img: "https://oldschool.runescape.wiki/images/Mimic.png" },
-            { text: "2 Whips/3 Masks", img: "https://oldschool.runescape.wiki/images/Abyssal_whip.png" },
-            { text: "D Axe + D Pick", img: "https://oldschool.runescape.wiki/images/Dragon_pickaxe.png" },
-            { text: "Any Jar", img: "https://oldschool.runescape.wiki/images/Jar_of_darkness_detail.png?7bdc6" },
-            { text: "10 Brimstone Keys", img: "https://oldschool.runescape.wiki/images/Brimstone_key_detail.png?60e5e" },
-            { text: "Dragon Impling", img: "https://oldschool.runescape.wiki/images/Dragon_impling_jar.png" },
-            { text: "2 Zenyte", img: "https://oldschool.runescape.wiki/images/Zenyte_shard.png" },
-            { text: "Wintertodt Unique", img: "https://oldschool.runescape.wiki/images/Tome_of_fire.png" },
-            { text: "Sarachnis Cudgel", img: "https://oldschool.runescape.wiki/images/Sarachnis_cudgel.png" },
-            { text: "Dark Bow", img: "https://oldschool.runescape.wiki/images/Dark_bow.png" },
-            { text: "Fire Cape", img: "https://oldschool.runescape.wiki/images/Fire_cape.png" },
-            { text: "GWD Unique", img: "https://oldschool.runescape.wiki/images/Armadyl_chestplate.png" }
+              { text: "Any Pet", img: "https://oldschool.runescape.wiki/images/Abyssal_orphan.png" },
+              { text: "Clue 250k+", img: "https://oldschool.runescape.wiki/images/Clue_scroll_%28master%29.png" },
+              { text: "GOTR Unique", img: "https://oldschool.runescape.wiki/images/Abyssal_lantern_detail.png?eca08" },
+              { text: "Dark Bow", img: "https://oldschool.runescape.wiki/images/Dark_bow.png" },
+              { text: "Zulrah Unique", img: "https://oldschool.runescape.wiki/images/Toxic_blowpipe.png" },
+              { text: "Mimic", img: "https://oldschool.runescape.wiki/images/Mimic.png" },
+              { text: "Tempoross Unique", img: "https://oldschool.runescape.wiki/images/Tome_of_water.png" },
+              { text: "Fire Cape", img: "https://oldschool.runescape.wiki/images/Fire_cape.png" },
+              { text: "Lord of the Rings", img: "https://oldschool.runescape.wiki/images/Ring_of_suffering.png" },
+              { text: "D Axe + D Pick", img: "https://oldschool.runescape.wiki/images/Dragon_pickaxe.png" },
+              { text: "Any Jar", img: "https://oldschool.runescape.wiki/images/Jar_of_darkness_detail.png?7bdc6" },
+              { text: "Dragon Impling", img: "https://oldschool.runescape.wiki/images/Dragon_impling_jar.png" },
+              { text: "Free" },
+              { text: "Wintertodt Unique", img: "https://oldschool.runescape.wiki/images/Tome_of_fire.png" },
+              { text: "2 Zenyte", img: "https://oldschool.runescape.wiki/images/Zenyte_shard.png" },
+              { text: "3 Barrows Unique", img: "https://oldschool.runescape.wiki/images/Dharok%27s_helm.png" },
+              { text: "Any Crystal Seed", img: "https://oldschool.runescape.wiki/images/Crystal_armour_seed_detail.png?fa149" },
+              { text: "Moons Unique", img: "https://oldschool.runescape.wiki/images/Dual_macuahuitl_detail.png?be5ad" },
+              { text: "Vorkath Unique", img: "https://oldschool.runescape.wiki/images/Skeletal_visage.png" },
+              { text: "Synapse", img: "https://oldschool.runescape.wiki/images/Tormented_synapse_detail.png?27153" },
+              { text: "Sarachnis Cudgel", img: "https://oldschool.runescape.wiki/images/Sarachnis_cudgel.png" },
+              { text: "10 Brimstone Keys", img: "https://oldschool.runescape.wiki/images/Brimstone_key_detail.png?60e5e" },
+              { text: "2 Whips/3 Masks", img: "https://oldschool.runescape.wiki/images/Abyssal_whip.png" },
+              { text: "Glacial temotli", img: "https://oldschool.runescape.wiki/images/Glacial_temotli_detail.png?37b7e" },
+              { text: "GWD Unique", img: "https://oldschool.runescape.wiki/images/Armadyl_chestplate.png" }
         ];
 
         const board = document.getElementById('bingoBoard');
